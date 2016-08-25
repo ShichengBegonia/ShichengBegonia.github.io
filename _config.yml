@@ -1,0 +1,47 @@
+safe: false
+permalink: /posts/:title.html
+exclude:
+  - README.md
+
+name: sotter.github.io
+host: localhost
+desc: 很多年以后，世界是否知道曾经存在过一个人，以及他的一切。
+
+markdown: redcarpet
+redcarpet:
+  extensions: [ "hard_wrap","autolink", "fenced_code_blocks", "tables", "strikethrough", "superscript", "with_toc_data", "highlight", "prettify","no_intra_emphasis"]
+
+pygments: true
+highlighter: pygments
+
+#markdown: kramdown
+#kramdown:
+  #input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  #hard_wrap: false
+#highlighter: rouge
+
+custom:
+    category:
+        default: Default Category
+        web:  web Category
+    categories:
+      - name:  default
+        title: Default Category
+
+      - name:  web
+        title: web Category
+
+    scrollingLoadCount: 0                         # 滚屏自动加载文章数量，“0”为关闭
+
+meta:
+    author:
+        name: Sotter Liu
+        email: sotter.liu@gmail.com
+        disqus: Sotter                              # Disqus缩略标识
+        gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
+        github: https://sotter.github.com           # GitHub账号
+        gravatar: 80a17bb7ecb37f2f1f0e2906b0e2c253  # Gravatar头像标识
+
+    disqus: disqus.com/embed.js                     # Disqus评论的JS地址
+    gapi: http://www.google.com/jsapi               # Google API地址
+    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
